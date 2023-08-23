@@ -78,6 +78,9 @@ namespace ReflexionSemantic.Services.Implementations
                 {
                     var video = VideoList.Where(x => x.TwelvelabVideoId == item.video_id).FirstOrDefault();
                     item.video_blob_url = video?.VideoBlobUrl;
+                    item.thumbnail_url = video?.ThumbnailUrl;
+                    item.hls_blob_url = video?.TwelvelabVideoUrl;
+                    item.videoName = video?.FileName;
                 }
             }
             return searchResponseDto;

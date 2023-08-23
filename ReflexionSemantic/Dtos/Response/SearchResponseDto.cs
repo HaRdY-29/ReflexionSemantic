@@ -19,6 +19,9 @@ namespace ReflexionSemantic.Dtos.Response
         public double? score { get; set; }
         public double? start { get; set; }
         public string? video_blob_url { get; set; }
+        public string? videoName { get; set; }
+        public string? hls_blob_url { get; set; }
+        public string? thumbnail_url { get; set; }
         public double? end { get; set; }
         public List<Metadata1>? metadata { get; set; }
         public string? video_id { get; set; }
